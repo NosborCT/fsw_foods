@@ -5,7 +5,7 @@ import CategoryItem from "./category-item";
 
 const CategoryList = async () => {
     
-    const categories = await db.category.findMany({});
+    const categories = await db.category.findMany({});''
 
 
     return ( 
