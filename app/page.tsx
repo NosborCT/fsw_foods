@@ -3,9 +3,11 @@ import Image from "next/image";
 import CategoryList from "./_components/category-list";
 import Header from "./_components/header";
 import Search from "./_components/search";
+import ProductList from "./_components/product-list";
 
-export default function Home() {
+const Home = () => {
   return ( 
+
     <>
     <Header/>
 
@@ -26,6 +28,13 @@ export default function Home() {
     quality={100}   
     />
     </div>
+
+    <div className="px-5 pt-6">
+      <ProductList/>
+
+    </div>
     </>
-  );
+
+   );
 }
+export default Home;
