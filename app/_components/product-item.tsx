@@ -1,7 +1,7 @@
-import { Prisma, Product } from "@prisma/client";
+import { Prisma} from "@prisma/client";
 import Image from "next/image";
 import { calculateProductTotalPrice, formatCurrency } from "../_helpers/price";
-import { ArrowDown01Icon, ArrowDownIcon } from "lucide-react";
+import { ArrowDownIcon } from "lucide-react";
 
 interface ProductItemProps{
     product : Prisma.ProductGetPayload<{
@@ -35,7 +35,7 @@ const ProductItem = ({product}: ProductItemProps) => {
             
             <div>
                 <h2 className="text-sm truncate">{product.name}</h2>
-                <div className="flex gap-4 font-semibold items-center gap-1">
+                <div className="flex gap-4 font-semibold items-center ">
                     <h3 className="font-semibold">
                         {formatCurrency(calculateProductTotalPrice(product))}
                     </h3>
