@@ -43,7 +43,8 @@ const Home = async() => {
 
     <div className="pt-6 space-y-4">
       <div className="px5 flex items-center justify-between" >
-      <h2 className="font-semibold pl-6 ">Pedidos Recomendados</h2>
+      <h2 className="font-semibold pl-6 ">Produtos Recomendados</h2>
+      
       <Button variant={"ghost"} className="text-primary p-0 hover:bg-transparent h-fit">
         Ver todos
         <ChevronRightIcon size={16}/>

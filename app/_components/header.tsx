@@ -2,18 +2,21 @@
 import Image  from 'next/image';
 import { Button } from './ui/button';
 import { MenuIcon } from 'lucide-react';
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 const Header = () => {
 
-    const router = useRouter();
-    const handleBackClick = () => router.back()
+   
     
     return ( 
         <div className='flex justify-between pt-6 px-5'>
 
+        <div className="relative h-[30px] w-[100px]">
+            <Link href="/"> 
+                <Image src = "/logo.png" alt = "FSW Foods" fill className=' object-cover' />
+            </Link>
 
-        <Image src = "/logo.png" alt = "FSW Foods" height = {60} width={100} onClick={handleBackClick}/>
+        </div>
 
         <Button size = 'icon' variant={'outline'} className='border-none bg-transparent'>
             <MenuIcon/>
